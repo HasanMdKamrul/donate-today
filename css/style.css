@@ -106,10 +106,10 @@ input[type="text"] {
 }
 
 .donate-plan {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
-.donate-plan h1 {
+.title {
   color: #121212;
   font-weight: 700;
   font-size: 45px;
@@ -130,6 +130,7 @@ input[type="text"] {
   align-items: center;
   gap: 5%;
   padding: 0 10%;
+  margin-bottom: 200px;
 }
 
 .card-food {
@@ -198,4 +199,22 @@ footer {
   line-height: 20px;
   text-decoration: none;
   color: #ffffff;
+}
+
+#fix-image img {
+  width: 33.33%;
+  border: 1px solid blue;
+  border-radius: 5%;
+}
+
+#fix-image img:hover {
+  border: 1px solid orange;
+  border-radius: 5%;
+}
+
+.items {
+  display: flex;
+  padding: 10%;
+  gap: 2%;
+  margin: 0 5%;
 }
