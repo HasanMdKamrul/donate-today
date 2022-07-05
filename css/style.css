@@ -123,3 +123,35 @@ input[type="text"] {
   font-size: 18px;
   line-height: 28px;
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 0 10%;
+}
+
+.card-food {
+  width: 360px;
+  height: 352px;
+  padding: 5%;
+  margin-top: 50px;
+}
+
+.card-food img {
+  width: 58.13px;
+  height: 49.77px;
+}
+
+#card-one {
+  background-color: rgba(79, 157, 166, 0.1);
+}
+
+#card-two {
+  background-color: rgba(255, 89, 89, 0.1);
+}
+
+#card-three {
+  background-color: #fff4d6;
+}
