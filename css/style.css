@@ -1,9 +1,11 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.centrealign {
-  text-align: center;
+.header-component {
+  margin-top: 50px;
 }
+/* * Header Section */
+
 .header {
   padding: 10%;
   background-image: url(../images/donation13.jpg);
@@ -11,6 +13,7 @@ body {
   background-position: center;
   background-size: cover;
   color: #ffffff;
+  text-align: center;
 }
 
 .header h1 {
@@ -25,7 +28,7 @@ body {
 }
 
 .header div {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .button-donate-now {
@@ -35,6 +38,8 @@ body {
   color: #ffffff;
   border-radius: 5px;
 }
+
+/* * Donate Today * */
 
 .donate-today {
   text-align: center;
@@ -55,6 +60,8 @@ body {
   line-height: 28px;
 }
 
+/* ** Donation Amount Section */
+
 .amount {
   display: flex;
   justify-content: space-between;
@@ -74,9 +81,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 #item-selected {
+  background-color: #ffeeee;
+  border: 2px solid #9659ff;
+  border-radius: 5px;
+  color: orange;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: all 0.5s ease-in-out;
+}
+
+#item-selected:hover {
+  border: 2px solid #1ebd39;
+  color: rgb(103, 27, 184);
+}
+
+.taka:hover {
   background-color: #ffeeee;
   border: 2px solid #ff5959;
   border-radius: 5px;
@@ -84,7 +107,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-
+/* * Input Amount */
 .input-amount {
   display: flex;
   flex-direction: column;
@@ -93,7 +116,12 @@ body {
   margin-top: 50px;
 }
 
-input[type="text"] {
+.input-amount div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+form input[type="text"] {
   text-align: center;
   font-weight: 400;
   font-size: 18px;
@@ -105,10 +133,10 @@ input[type="text"] {
   border-bottom-style: 1px solid #dadada;
 }
 
-.header-component {
-  margin-top: 50px;
+/* *Donate Plan Section */
+.donate-plan {
+  text-align: center;
 }
-
 .title {
   color: #121212;
   font-weight: 700;
@@ -117,19 +145,20 @@ input[type="text"] {
   text-align: center;
 }
 
-.header-component p {
+.donate-plan p {
   color: #707070;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
 }
 
+/* ** Card Section */
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
-  padding: 0 10%;
+  padding: 5% 7%;
   margin-bottom: 200px;
 }
 
@@ -156,23 +185,35 @@ input[type="text"] {
 #card-three {
   background-color: #fff4d6;
 }
-
-footer h1 {
-  font-family: "Lobster", cursive;
-  color: #ff5959;
+/* ** Payment Method */
+.image {
+  width: 33.33%;
+  border: 1px solid blue;
+  border-radius: 5%;
 }
 
-footer small {
-  font-family: "Manrope", sans-serif;
-  color: #d9dbe1;
+.image:hover {
+  border: 1px solid orange;
+  border-radius: 5%;
 }
 
-footer {
-  background-color: #0b0d17;
-  padding: 50px;
-  margin-top: 50px;
+.items {
+  display: flex;
+  padding: 10%;
+  gap: 2%;
+  margin: 0 5%;
+}
+/* ** Team Section */
+.team {
+  text-align: center;
 }
 
+/* *Updates Section */
+.updates {
+  text-align: center;
+}
+
+/* ** Email Section ** */
 .email {
   display: flex;
   justify-content: center;
@@ -200,21 +241,20 @@ footer {
   text-decoration: none;
   color: #ffffff;
 }
-
-#fix-image img {
-  width: 33.33%;
-  border: 1px solid blue;
-  border-radius: 5%;
+/* ** Footer Section ** */
+footer h1 {
+  font-family: "Lobster", cursive;
+  color: #ff5959;
 }
 
-#fix-image img:hover {
-  border: 1px solid orange;
-  border-radius: 5%;
+footer small {
+  font-family: "Manrope", sans-serif;
+  color: #d9dbe1;
 }
 
-.items {
-  display: flex;
-  padding: 10%;
-  gap: 2%;
-  margin: 0 5%;
+footer {
+  background-color: #0b0d17;
+  padding: 50px;
+  margin-top: 50px;
+  text-align: center;
 }
